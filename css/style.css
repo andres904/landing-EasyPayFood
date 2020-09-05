@@ -5,7 +5,7 @@ html{
 header {
     width: 100%;
     height: 100%;
-    background: url(../img/jakub-kapusnak-4hgYULBzVEE-unsplash.jpg);
+    background: url(../img/Carrusel-1.jpg);
     background-position-x: center;
     background-repeat: none;
     background-size:cover;
@@ -20,14 +20,19 @@ header .menu  img{
 }
 header .menu {
     background: #330000;
+    opacity: 85%;
     position: fixed;
-    max-width: 100%;
-    top: 0;
     z-index: 9;
+    width: 100%;
 }
 
 header .menu .navbar-collapse {
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid #ffcc00;
+    color: #ffcc00;
 }
 
 header .menu .navbar-collapse a{
@@ -35,7 +40,7 @@ header .menu .navbar-collapse a{
 }
 
 header .menu a{
-    margin-left: 30px;
+    
 }
 header .texto{
     text-align: center;
@@ -51,12 +56,18 @@ header .texto p{
 header .texto .btn-light{
     background: transparent;
     padding: 0 50px;
+    border: 2px solid #ffffff;
     color: #ffff;
-     margin-bottom: 200px;
+    margin-bottom: 200px;
+}
+
+header .texto .btn-light:hover{
+    background: #ffcc00;
+    
 }
 
 #nosotros .texto2{
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 20px;
     height: 50%;
 }
@@ -71,6 +82,7 @@ header .texto .btn-light{
 #nosotros .contenido{
     margin: 20px;
 }
+
 #nosotros .contenido img{
     max-width: 100%;
 }
@@ -86,7 +98,7 @@ header .texto .btn-light{
 
 #servicios .tex3 .contenido2 h2{
     text-align: center;
-    margin-top: 55px;
+    padding-top: 90px;
 }
 #servicios .tex3 {
     margin: 40px;
@@ -113,7 +125,6 @@ header .texto .btn-light{
 
 #equipoTrabajo{
     width: 100%;
-    height: 100%;
     background: url(../img/equipo2.jpeg);
     background-position-x: center;
     background-repeat: none;
@@ -124,16 +135,16 @@ header .texto .btn-light{
 #equipoTrabajo h2 {
     text-align: center;
     color: #ffff;
-    padding-top: 20px;
+    padding-top: 90px;
     margin-bottom: 80px;
 }
 
 #equipoTrabajo .contenido4 {
     max-width: 300px;
-    max-height: 200px;
     background: #ffff;
     opacity: 60%;
     padding: 50px;
+    padding-bottom: 40px;
     margin-bottom: 40px;
 }
 
@@ -166,10 +177,40 @@ footer  img {
     width: 50px;
 }
 
-footer  h4{
+footer .contenido5  h4{
     text-align: center;
     color: #ffff;
     margin: 10px 0;
+}
+footer .contenido5  button{
+    background: transparent;
+    border: none;
+}
+
+footer .contenido5  button.fb:hover{
+    background: blue;
+}
+
+footer .contenido5  button.tw:hover{
+    background: #00acee;
+}
+
+footer .contenido5  button.im:hover{
+    background: red;
+}
+
+footer .contenido5  button.ws:hover{
+    background: greenyellow;
+}
+
+footer .contenido5{
+    text-align: center;
+}
+
+footer .contenido5 img{
+    padding-top: 25px;
+    margin: auto;
+    padding: 25px 10px;    
 }
 
 footer .contenido6 {
@@ -181,33 +222,51 @@ footer .contenido6 {
 footer .contenido6 p{
     margin: 1px;;
 }
-.final {
+
+footer .contenido7 {
+    text-align: center;
+    color: #ffffff;
+
+}
+
+footer .contenido7 img{
+    margin:auto ;
+    width: 136px;
+    padding-top: 24px;
+}
+
+footer .final {
     margin-top: 5px;
     text-align: center;
     color: #ffff;
     padding-bottom: 20px;
 }
-.final img{
+footer .final img{
     max-width: 60px;
     border-radius: 50%;
 }
-footer .contenido5{
-    text-align: center;
-}
 
-footer .contenido5 img{
-    padding-top: 25px;
-    margin: auto;
-    padding: 25px 10px;    
-}
 
-.contenido7 {
-    text-align: center;
 
-}
+/* RESPONSIVE - TABLET */
+@media screen and (max-width:990px) and (min-width:768px){
+    #equipoTrabajo img{
+        position: relative;
+        top: 40px;
+        left: 33px;
+    }
+    #equipoTrabajo .contenido4 button{
+        font-size: 11px;
+    }
+    #equipoTrabajo .contenido4{
+    max-width: 300px;
+    background: #ffff;
+    opacity: 60%;
+    padding: 31px;
+    margin-bottom: 40px;
 
-.contenido7 img{
-    margin:auto ;
-    max-width: 250px;
-    padding-top: 20px;
-}
+    }
+    #servicios .tex3 .contenido2 h2{
+        padding-top: 40px;
+    }
+} 
